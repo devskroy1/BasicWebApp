@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
 
 public class QueryProcessorTest {
 
@@ -22,6 +21,6 @@ public class QueryProcessorTest {
 
     @Test
     public void isNotCaseSensitive() throws Exception {
-        fail(); //(queryProcessor.process("shakespeare"), containsString("playwright"));
+        assertThat(queryProcessor.process("shakespeare"), containsString("playwright"));
     }
 }
