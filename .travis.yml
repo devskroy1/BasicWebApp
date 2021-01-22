@@ -2,3 +2,8 @@ language: java
 jdk:
 - openjdk8
 script: mvn clean verify
+deploy:
+  provider: heroku
+  api_key:
+    secure: G8288ImY6ZHCRRXlTLrfVqys/pbSzQNw4byVCchmB69u528XSN1QkD/ETKvVFbuK3Kk4q2E2IBbscLkDzun/SKRBw0DNPj1SskKkys8GCsArv7DISvsO9lSY60vVBPzP74ZTc7PXrlvawOlICd3GW+7j07LlmAQT8ZT+30E+0E4pjLuHBmKnTaOhWx0It04VuHk6l2bvr6Opjk188zVFBCkAjtg9/PluCIgXaYv0yyBk3TLYD47X0llZF/PRZUfjBxxe6ZqmoEvVnruT/K+oP2fQM5clCcROp3z8ATUSJz+z/NHdQKFJChNmszQNQ/L5SUg1hoMOoy/W0RoI5wYogOFa9T+tCuaxFhhsZsUoN/22/0jqhMqT9A+7Hepy5aWy0Gm4dzjLTvk3VQ82FQzuJiAXeRWTYqRd1GaqQoMkBmZFOcEsEt0rBjE+AvOaQPbR2J3KIN9x+Z5Z1n2z50ih1ttOoABGC5+OmHFFX37K9yONoPMRV41PIHmvRhkYpLKZM5OUBpGgRPCIjQ+6+6V/s4BeSEl+MAQXl5QQ6KqQeiwLg/SxBs+IY7jVPwCn0F+JSOa5eAlyBkU52Xtc8qKmv2BfR+BEVbrxV9Pdg1XuXcpwwyR8QCObStzcQTffqX7+geTgkRH5EumgpRFQDHpweVxi8qbqkUMSPNuaSPYy2Ps=
+  app: software-group-web-app
