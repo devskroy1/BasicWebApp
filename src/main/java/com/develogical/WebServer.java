@@ -16,6 +16,7 @@ public class WebServer {
 
   public WebServer() throws Exception {
 
+    // Test comment
     Server server = new Server(portNumberToUse());
 
     ServletHandler handler = new ServletHandler();
